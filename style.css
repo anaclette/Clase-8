@@ -1,0 +1,110 @@
+body {
+    background-color: pink;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 7px;
+}
+
+/* si indico un " * " es para seleccionar todo lo que contenga la pagina */
+/* el valor que asignemos a una clase le gana al valor que asignemos a una etiqueta */
+
+.parrafo {
+    margin: 20px;
+    font-size: 25px;
+    border: 2px solid brown;
+    background-color: peru;
+}
+
+.principal {
+    color: white;
+    padding: 20px;
+
+}
+
+.titulo {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+section {
+    display: flex;
+}
+
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkorange;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    border: 1px solid darkcyan;
+    margin: 10px;
+}
+
+/* .footer > p { */
+    /* color: green; */
+/* } */
+
+/* esto quiere decir todos los hijos directos del footer */
+/* text-align center es una propiedad heredada */
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: darkblue;
+}
+/* esto quiere decir todos los descendientes de esa clase, sin importar cuan lejana sea la relacion */
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: purple;
+}
+
+a:hover {
+    color: orangered;
+    border: 3px dotted solid black;
+    font-size: 200%;
+}
+
+.seccion:hover {
+    background-color: palevioletred;
+}
+
+/*  pseudoclases se refiere a una forma de seleccionar elementos en css que no forman parte del elemento sino a estados del mismo. La llamamos con " a:visited por ejemplo. Con dos puntos, estilamos estados de cierto elemento. Los elementos con estados son aquellos con los que interactua el usuario"  */
+/* llamamos pseudoelementos de forma similar a pseudoclases pero con 4 puntos " :: " modifica la propiedad de un elemento seleccionado. No se suele usar.  */
+p::first-letter {
+    font-size: 25px;
+}
+
+p::selection {
+    background-color: orange;
+}
+
+h3::before {
+    content: "Antes del boton";
+}
+
+h3::after {
+    content: "Despues del boton";
+}
+
+span::after {
+    content: "Despues del span";
+}
